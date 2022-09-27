@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+body {
+  background-color: var(--Light-gray);
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--White);
+  display: flex;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: none;
+  flex-direction: column;
+  width: 45%;
+  height: 50%;
+}
+.img {
+  overflow: hidden;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.img img {
+  width: 100%;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info h1 {
+  font-size: 20px;
+  padding: 10px;
+}
+.info p {
+  color: var(--Grayish-blue);
+  padding: 10px;
+  font-size: 16px;
+}
+.attribution {
+  position: relative;
+}
+.attribution div {
+  position: absolute;
+  bottom: -130px;
+  left: -300px;
+}
+@media screen and (max-width: 628px) {
+  .card {
+    width: 80%;
+    height: 100%;
+  }
+  .attribution {
+    display: none;
+  }
+}
